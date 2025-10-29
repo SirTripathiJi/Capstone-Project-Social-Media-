@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7eaf6;
+    color: #111;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 0 4px;
+    color: #333;
+    display: inline-block;
+}
+
+.btn.primary {
+    background: #00bcd4;
+    color: white;
+    border: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #d9f6ff, #f9ffff);
+}
+
+.features {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.features .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f0fbff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.login-container {
+    width: 320px;
+    margin: 10% auto;
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.chat-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 240px;
+    background: #f8f9fb;
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    background: #e0f7fa;
+    border-radius: 8px;
+}
+
+.chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 0.5rem 0;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    background: #f4f4f4;
+    width: fit-content;
+}
+
+.message.you {
+    background: #00bcd4;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-form {
+    display: flex;
+    padding: 0.5rem;
+    border-top: 1px solid #eee;
+}
+
+.chat-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.chat-form button {
+    background: #00bcd4;
+    border: none;
+    color: white;
+    padding: 0 1rem;
+    font-size: 18px;
+    border-radius: 8px;
+}
