@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta stuff -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Linkverse</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<!-- chat page -->
+
+<body class="chat-body">
+
+    <div class="chat-container">
+
+        <!-- left sidebar -->
+        <aside class="sidebar">
+
+            <!-- logo area -->
+            <div class="sidebar-logo">
+                <div class="logo-mark">LV</div>
+                <div class="logo-text">Linkverse</div>
+            </div>
+
+            <!-- channels list -->
+            <div class="sidebar-section">
+                <p class="sidebar-label">Channels</p>
+                <ul class="channel-list">
+                    <li class="active"># general</li>
+                    <li># random</li>
+                    <li># updates</li>
+                    <li># support</li>
+                </ul>
+            </div>
+
+            <!-- dms list -->
+            <div class="sidebar-section">
+                <p class="sidebar-label">Direct messages</p>
+                <ul class="dm-list">
+                    <li>Shivam</li>
+                    <li>Raj</li>
+                    <li>You</li>
+                </ul>
+            </div>
+
+            <!-- logout btn -->
+            <div class="sidebar-footer">
+                <a href="index.html" class="btn sidebar-btn">Logout</a>
+            </div>
+
+        </aside>
+
+        <!-- main chat -->
+        <main class="chat-main">
+
+            <!-- top header -->
+            <header class="chat-header">
+                <div>
+                    <h1># general</h1>
+                    <p>Announcements and team-wide messages.</p>
+                </div>
+
+                <!-- user info -->
+                <div class="user-pill">
+                    <span class="user-avatar">Y</span>
+                    <span class="user-name">You</span>
+                </div>
+            </header>
+
+            <!-- small banner -->
+            <section class="chat-topic-banner">
+                Welcome to the <strong>#general</strong> channel!
+            </section>
+
+            <!-- messages container -->
+            <section class="messages" id="messages"></section>
+
+            <!-- input bar -->
+            <form class="chat-form">
+                <input type="text" placeholder="Message #general" autocomplete="off">
+                <button class="send-btn">Send ➤</button>
+            </form>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
