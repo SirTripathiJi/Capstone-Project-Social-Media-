@@ -2,7 +2,7 @@
 
 Capstone Project – SNW Subject
 Student: Akshat Tripathi
-Mentor: Sanjeevni Ma’am
+Enrollment ID: 2501010584
 
 🌟 Overview
 
