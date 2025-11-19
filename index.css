@@ -47,8 +47,7 @@ a {
 
 /* button hover effect */
 .btn:hover {
-    background: #f3f4f6;
-    border-color: #9ca3af;
+    background: #38bdf8;
     transform: translateY(-1px);
 }
 
