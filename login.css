@@ -162,24 +162,3 @@
     text-decoration: underline;
 }
 
-/* responsive */
-@media (max-width: 900px) {
-
-    /* stack layout */
-    .auth-main {
-        flex-direction: column;
-        max-width: 430px;
-        text-align: center;
-    }
-
-    /* smaller image */
-    .auth-image {
-        height: 250px;
-    }
-
-    /* full width form */
-    .auth-form label,
-    .auth-form input {
-        max-width: 100%;
-    }
-}
