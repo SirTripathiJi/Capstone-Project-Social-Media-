@@ -517,45 +517,4 @@ a {
     box-shadow: 0 20px 42px rgba(37, 99, 235, .9);
 }
 
-/* tablet layout */
-@media(max-width:960px) {
-    .hero-card {
-        grid-template-columns: 1fr;
-    }
 
-    .hero-preview {
-        order: -1;
-    }
-
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .workflow-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* phone layout */
-@media(max-width:720px) {
-
-    .features-grid,
-    .workflow-grid,
-    .info-strip-inner {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-card {
-        padding: 32px 20px;
-    }
-
-    .cta-actions {
-        flex-direction: column;
-    }
-
-    .floating-demo-btn {
-        right: 16px;
-        bottom: 16px;
-        padding: 8px 14px;
-    }
-}
