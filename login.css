@@ -157,8 +157,4 @@
     font-weight: 600;
 }
 
-/* underline hover */
-.auth-footer-text a:hover {
-    text-decoration: underline;
-}
 
