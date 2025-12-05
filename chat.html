@@ -1,94 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- meta stuff -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat - Linkverse</title>
-
-    <!-- css file -->
     <link rel="stylesheet" href="chat.css">
 </head>
 
-<!-- chat page -->
-
 <body class="chat-body">
 
-    <div class="chat-container">
+<div class="chat-container">
 
-        <!-- left sidebar -->
-        <aside class="sidebar">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-mark">LV</div>
+            <div class="logo-text">Linkverse</div>
+        </div>
 
-            <!-- logo area -->
-            <div class="sidebar-logo">
-                <div class="logo-mark">LV</div>
-                <div class="logo-text">Linkverse</div>
+        <div class="sidebar-section">
+            <p class="sidebar-label">Channels</p>
+            <ul class="channel-list">
+                <li class="active">General</li>
+                <li>Random</li>
+                <li>Updates</li>
+                <li>Support</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <p class="sidebar-label">Direct messages</p>
+            <ul class="dm-list">
+                <li>Shivam</li>
+                <li>Raj</li>
+                <li>You</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="index.html" class="btn sidebar-btn">Logout</a>
+        </div>
+    </aside>
+
+    <main class="chat-main">
+
+        <header class="chat-header">
+            <div class="header-left">
+                <h1>General</h1>
+                <p>Announcements and team-wide messages.</p>
             </div>
 
-            <!-- channels list -->
-            <div class="sidebar-section">
-                <p class="sidebar-label">Channels</p>
-                <ul class="channel-list">
-                    <li class="active">General</li>
-                    <li>Random</li>
-                    <li>Updates</li>
-                    <li>Support</li>
-                </ul>
-            </div>
-
-            <!-- dms list -->
-            <div class="sidebar-section">
-                <p class="sidebar-label">Direct messages</p>
-                <ul class="dm-list">
-                    <li>Shivam</li>
-                    <li>Raj</li>
-                    <li>You</li>
-                </ul>
-            </div>
-
-            <!-- logout btn -->
-            <div class="sidebar-footer">
-                <a href="index.html" class="btn sidebar-btn">Logout</a>
-            </div>
-
-        </aside>
-
-        <!-- main chat -->
-        <main class="chat-main">
-
-            <!-- top header -->
-            <header class="chat-header">
-                <div>
-                    <h1>General</h1>
-                    <p>Announcements and team-wide messages.</p>
-                </div>
-
-                <!-- user info -->
+            <div class="header-right">
+                <button type="button" class="theme-toggle">Dark mode</button>
                 <div class="user-pill">
                     <span class="user-avatar">Y</span>
                     <span class="user-name">You</span>
                 </div>
-            </header>
+            </div>
+        </header>
 
-            <!-- small banner -->
-            <section class="chat-topic-banner">
-                Welcome to the <strong>General</strong> channel!
-            </section>
+        <section class="chat-topic-banner">
+            Welcome to the <strong>General</strong> channel!
+        </section>
 
-            <!-- messages container -->
-            <section class="messages" id="messages"></section>
+        <section class="messages" id="messages">
+            <div class="message">Hello team, welcome to Linkverse demo.</div>
+            <div class="message you">Thanks! Excited to try this out.</div>
+        </section>
 
-            <!-- input bar -->
-            <form class="chat-form">
-                <input type="text" placeholder="Message #general" autocomplete="off">
-                <button class="send-btn">Send ➤</button>
-            </form>
+        <form class="chat-form">
+            <input type="text" placeholder="Message #general" autocomplete="off">
+            <button class="send-btn" type="submit">Send ➤</button>
+        </form>
 
-        </main>
+    </main>
 
-    </div>
+</div>
 
+<script src="chat.js"></script>
 </body>
-
 </html>
