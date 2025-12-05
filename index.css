@@ -104,8 +104,8 @@ a {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px;
-    height: 2px;
+    bottom: -5px;
+    height: 3.5px;
     width: 0;
     background: linear-gradient(135deg, #0ea5e9, #6366f1);
     transition: 0.2s;
