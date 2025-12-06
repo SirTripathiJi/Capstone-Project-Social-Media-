@@ -43,7 +43,8 @@ a {
 }
 
 .site-header {
-    background: radial-gradient(circle at top left, #e0f2fe, #f5f3ff);
+    /* background: radial-gradient(circle at top left, #bae9ff, #f5f3ff); */
+    background: linear-gradient(135deg, #d1f0ff, #8082e7);
     padding-bottom: 40px;
 }
 
