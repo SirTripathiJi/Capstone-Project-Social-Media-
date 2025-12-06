@@ -1,27 +1,29 @@
-let loginForm = document.querySelector(".auth-form");
+let form = document.querySelector(".auth-form");
 let emailInput = document.getElementById("login-email");
 let passInput = document.getElementById("login-pass");
+let errorMsg = document.getElementById("login-error");
 
-loginForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+form.addEventListener("submit", function(event) {
+    let email = emailInput.value;
+    let pass = passInput.value;
 
-    let email = emailInput.value.trim();
-    let pass = passInput.value.trim();
-
-    let error = document.getElementById("login-error");
-
-    if (!email.includes("@") || pass.length === 0) {
-        if (!error) {
-            error = document.createElement("p");
-            error.id = "login-error";
-            error.style.color = "red";
-            error.style.fontSize = "14px";
-            loginForm.appendChild(error);
-        }
-        error.textContent = "Enter a valid email and password.";
-        return;
+    if (email === "") {
+        event.preventDefault();
+        errorMsg.style.display = "block";
+        errorMsg.textContent = "Email cannot be empty.";
+    } 
+    else if (!email.includes("@")) {
+        event.preventDefault();
+        errorMsg.style.display = "block";
+        errorMsg.textContent = "Email must contain '@'.";
+    } 
+    else if (pass === "") {
+        event.preventDefault();
+        errorMsg.style.display = "block";
+        errorMsg.textContent = "Password cannot be empty.";
+    } 
+    else {
+        errorMsg.style.display = "none";
+        window.location.href = "chat.html";
     }
-
-    if (error) error.remove();
-    window.location.href = "chat.html";
 });
