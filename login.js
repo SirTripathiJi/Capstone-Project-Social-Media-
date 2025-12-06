@@ -1,29 +1,22 @@
 let form = document.querySelector(".auth-form");
-let emailInput = document.getElementById("login-email");
-let passInput = document.getElementById("login-pass");
-let errorMsg = document.getElementById("login-error");
+let email = form.querySelector("input[type='email']");
+let pass = form.querySelector("input[type='password']");
 
-form.addEventListener("submit", function(event) {
-    let email = emailInput.value;
-    let pass = passInput.value;
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-    if (email === "") {
-        event.preventDefault();
-        errorMsg.style.display = "block";
-        errorMsg.textContent = "Email cannot be empty.";
-    } 
-    else if (!email.includes("@")) {
-        event.preventDefault();
-        errorMsg.style.display = "block";
-        errorMsg.textContent = "Email must contain '@'.";
-    } 
-    else if (pass === "") {
-        event.preventDefault();
-        errorMsg.style.display = "block";
-        errorMsg.textContent = "Password cannot be empty.";
-    } 
-    else {
-        errorMsg.style.display = "none";
-        window.location.href = "chat.html";
+    let emailValid = email.value.includes("@");
+    let passValid = pass.value.trim().length >= 3;
+
+    if (!emailValid) {
+        alert("Enter a valid email");
+        return;
     }
+
+    if (!passValid) {
+        alert("Password must be at least 3 characters");
+        return;
+    }
+
+    window.location.href = "chat.html";
 });
