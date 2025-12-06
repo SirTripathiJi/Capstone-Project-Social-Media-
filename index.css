@@ -32,7 +32,7 @@ a {
 }
 
 .btn.primary {
-    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    background: linear-gradient(100deg, #0ea5e9, #6366f1);
     color: #fff;
     border: none;
 }
@@ -43,8 +43,7 @@ a {
 }
 
 .site-header {
-    /* background: radial-gradient(circle at top left, #bae9ff, #f5f3ff); */
-    background: linear-gradient(135deg, #d1f0ff, #8082e7);
+    background: linear-gradient(100deg, #d1f0ff, #8082e7);
     padding-bottom: 40px;
 }
 
